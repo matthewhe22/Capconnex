@@ -1,0 +1,33 @@
+{
+  "url": "http://localhost:2368",
+  "server": {
+    "port": 2368,
+    "host": "::"
+  },
+  "mail": {
+    "transport": "SMTP",
+    "from": "Matthew.he@capconnex.com.au",
+    "options": {
+      "host": "smtp.zoho.com",
+      "port": 587,
+      "secure": false,
+      "auth": {
+        "user": "Matthew.he@capconnex.com.au",
+        "pass": "Capconnex@1214"
+      }
+    }
+  },
+  "logging": {
+    "transports": [
+      "file",
+      "stdout"
+    ]
+  },
+  "process": "local",
+  "security": {
+    "staffDeviceVerification": true
+  },
+  "paths": {
+    "contentPath": "/var/lib/ghost/content"
+  }
+}

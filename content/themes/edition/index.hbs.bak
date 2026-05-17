@@ -1,0 +1,89 @@
+{{!< default}}
+
+<main>
+  <!-- ═══ Hero ═══ -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-eyebrow">{{@site.title}}</p>
+        <h1 id="hero-heading">{{@site.description}}</h1>
+        <p class="hero-sub">Precision tools for property professionals — from feasibility to procurement, built to cut through the noise.</p>
+        <div class="hero-actions">
+          <a href="/pencil-feasibility-model/" class="btn btn--gold">Explore Pencil</a>
+          <a href="/reach-us/" class="btn btn--outline">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-pattern">
+          <span class="hp-line"></span><span class="hp-line"></span><span class="hp-line"></span><span class="hp-line"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Solutions ═══ -->
+  <section class="solutions" aria-labelledby="solutions-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Solutions</p>
+        <h2 id="solutions-heading">Purpose-built for property</h2>
+        <p>Two focused products. No bloat.</p>
+      </div>
+      <div class="solutions-grid">
+        <!-- Pencil Card -->
+        <article class="solution-card">
+          <span class="card-tag">Feasibility Modeling</span>
+          <h3>Pencil</h3>
+          <p class="card-slogan">From assessment to action — in minutes, not days.</p>
+          <p>Run rapid scenario analysis for property acquisition. Evaluate opportunities with speed and precision.</p>
+          <a href="/pencil-feasibility-model/" class="card-link">Learn about Pencil →</a>
+        </article>
+        <!-- Ocorder Card -->
+        <article class="solution-card">
+          <span class="card-tag">Procurement Management</span>
+          <h3>Ocorder</h3>
+          <p class="card-slogan">Streamline every order. End the email chase.</p>
+          <p>Complete purchasing workflow — from initial request through to delivery. Built for clarity.</p>
+          <a href="/ocorder/" class="card-link">Learn about Ocorder →</a>
+        </article>
+        <!-- Tesla Auto Charging Card -->
+        <article class="solution-card">
+          <span class="card-tag">Energy Intelligence</span>
+          <h3>Tesla Auto Charging</h3>
+          <p class="card-slogan">Charge your EV on clean energy. Zero grid. Zero effort.</p>
+          <p>Smart charging that maximises solar self-consumption. Adjusts every 2 minutes using your solar and battery — no grid power needed.</p>
+          <a href="/tesla-auto-charging/" class="card-link">Learn about Tesla Charging →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ About Snippet ═══ -->
+  <section class="about-snippet" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-text">
+        <p class="section-label">About</p>
+        <h2 id="about-heading">No gimmicks, just disciplined engineering</h2>
+        <p>Capconnex Investment specializes in smart platforms for property professionals. We build tools that streamline procurement, feasibility analysis, and project management — turning complex workflows into clear, actionable insights.</p>
+        <a href="/about/" class="btn btn--outline">More about us</a>
+      </div>
+      <div class="about-values">
+        <div class="value-item"><span class="value-icon">⚡</span><span>Speed without sacrifice</span></div>
+        <div class="value-item"><span class="value-icon">🎯</span><span>Precision over guesswork</span></div>
+        <div class="value-item"><span class="value-icon">🔒</span><span>Trust built into every tool</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Contact CTA ═══ -->
+  <section class="contact-cta" aria-labelledby="cta-heading">
+    <div class="container">
+      <p class="section-label">Get in touch</p>
+      <h2 id="cta-heading">Ready to work smarter?</h2>
+      <p>Whether you're evaluating a site or managing a procurement pipeline — let's find the right tool for your workflow.</p>
+      <a href="/reach-us/" class="btn btn--gold">Contact us →</a>
+    </div>
+  </section>
+</main>
+
+{{#contentFor "body_class"}}{{#if @member}} logged-in{{/if}}{{/contentFor}}
