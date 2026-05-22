@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OC Order — Owners' Corporation Order Management | Capconnex</title>
+  <meta name="description" content="OC Order: a quote-to-completion order management platform for owners' corporations. Vendors, jobs, documents, and an owner-facing portal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+
+<nav class="nav" role="navigation" aria-label="Main">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="index.html"><span class="logo-mark">C</span><span>CAPCONNEX</span></a>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About</a>
+      <div class="nav-dropdown">
+        <button class="nav-link nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">Products <span class="caret">▼</span></button>
+        <div class="nav-dropdown-menu" role="menu">
+          <a class="nav-dropdown-item" href="pencil.html"><span class="item-title"><span class="item-icon">⌨</span> Pencil Feasibility</span><span class="item-desc">AI feasibility & margin modelling</span></a>
+          <a class="nav-dropdown-item" href="ev-charging.html"><span class="item-title"><span class="item-icon">⚡</span> Smart EV Charging</span><span class="item-desc">Solar + battery + Tesla orchestration</span></a>
+          <a class="nav-dropdown-item" href="ocorder.html"><span class="item-title"><span class="item-icon">📦</span> OC Order</span><span class="item-desc">Owners' corp order management</span></a>
+        </div>
+      </div>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-cta" href="contact.html">Get in Touch</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<header class="product-hero">
+  <div class="hero-grid"></div>
+  <div class="container" style="position: relative; z-index: 2;">
+    <div class="on-dark">
+      <span class="eyebrow reveal">📦 OC Order — Operations</span>
+      <h1 class="reveal" data-delay="100" style="margin-top: 1rem; max-width: 18ch;">
+        Every quote, job and invoice.<br>
+        <span style="color: var(--gold-bright);">One trail.</span>
+      </h1>
+      <p class="lead reveal" data-delay="200" style="margin-top: 1.5rem;">
+        OC Order is a quote-to-completion order management platform built for owners' corporations,
+        body corporates, and the strata managers who run them. From request to invoice — visible,
+        auditable, and dignified.
+      </p>
+      <div class="hero-cta reveal" data-delay="300">
+        <a class="btn btn-primary" href="contact.html">Book a walkthrough <span class="arrow">→</span></a>
+        <a class="btn btn-secondary" href="#how">How it works</a>
+      </div>
+
+      <div class="product-stats reveal" data-delay="400">
+        <div class="product-stat">
+          <div class="stat-value">Quote → Job → Invoice</div>
+          <div class="stat-label">End-to-end flow</div>
+        </div>
+        <div class="product-stat">
+          <div class="stat-value" data-countup="100%">100%</div>
+          <div class="stat-label">Audit trail</div>
+        </div>
+        <div class="product-stat">
+          <div class="stat-value">Vendor</div>
+          <div class="stat-label">+ owner portals</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ========== WHO IT'S FOR ========== -->
+<section style="background: var(--cream-soft);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Who it's for</span>
+      <h2>If you sign off works orders for a building you don't own — this is for you.</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+      <div class="step reveal" style="background: var(--white);" data-delay="100">
+        <h3>Strata &amp; OC managers</h3>
+        <p style="color: var(--text-dim);">Replace email threads and spreadsheets with a single source of truth for every quote and every job.</p>
+      </div>
+      <div class="step reveal" style="background: var(--white);" data-delay="200">
+        <h3>Committee members</h3>
+        <p style="color: var(--text-dim);">See where the money's going. Approve quotes, view documents, and follow jobs without chasing your manager.</p>
+      </div>
+      <div class="step reveal" style="background: var(--white);" data-delay="300">
+        <h3>Vendors &amp; trades</h3>
+        <p style="color: var(--text-dim);">Receive jobs, upload site photos, submit invoices, and get paid faster — all from one link.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== HOW IT WORKS ========== -->
+<section id="how" class="section-dark with-grain">
+  <div class="container">
+    <div class="section-head on-dark reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>Four stages. Zero spreadsheets.</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal" style="background: var(--navy-elev); color: var(--on-dark);" data-delay="100">
+        <h3 style="color: var(--on-dark);">Request raised</h3>
+        <p style="color: var(--on-dark-muted);">Owners or the committee log a request via the portal or email — automatically captured, tagged, and assigned.</p>
+      </div>
+      <div class="step reveal" style="background: var(--navy-elev); color: var(--on-dark);" data-delay="200">
+        <h3 style="color: var(--on-dark);">Quotes collected</h3>
+        <p style="color: var(--on-dark-muted);">Send to multiple vendors, compare side-by-side, capture committee approvals with full audit trail.</p>
+      </div>
+      <div class="step reveal" style="background: var(--navy-elev); color: var(--on-dark);" data-delay="300">
+        <h3 style="color: var(--on-dark);">Job executed</h3>
+        <p style="color: var(--on-dark-muted);">Vendor receives the job, uploads photos and notes on completion, owners see live progress.</p>
+      </div>
+      <div class="step reveal" style="background: var(--navy-elev); color: var(--on-dark);" data-delay="100">
+        <h3 style="color: var(--on-dark);">Invoice &amp; archive</h3>
+        <p style="color: var(--on-dark-muted);">Invoice attached to the job, payment status tracked, full history preserved for AGM reporting and audits.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FEATURES ========== -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Capabilities</span>
+      <h2>Built around the messy reality of strata work.</h2>
+    </div>
+
+    <div class="feature-grid" style="background: var(--cream-line); border-color: var(--cream-line);">
+      <div class="feature reveal" style="background: var(--cream-soft);" data-delay="100">
+        <div class="feature-icon">📋</div>
+        <h3 style="color: var(--navy);">Quote workflows</h3>
+        <p style="color: var(--text-dim);">Request multiple quotes, lock scope, compare line-by-line, route for approval based on dollar thresholds.</p>
+      </div>
+      <div class="feature reveal" style="background: var(--cream-soft);" data-delay="200">
+        <div class="feature-icon">🔧</div>
+        <h3 style="color: var(--navy);">Job tracking</h3>
+        <p style="color: var(--text-dim);">Status, scheduled date, on-site notes, photos, and sign-off — every job, every step.</p>
+      </div>
+      <div class="feature reveal" style="background: var(--cream-soft);" data-delay="300">
+        <div class="feature-icon">🧾</div>
+        <h3 style="color: var(--navy);">Vendor management</h3>
+        <p style="color: var(--text-dim);">One record per vendor: insurance dates, licences, ratings, payment terms — and a history of every job they've done.</p>
+      </div>
+      <div class="feature reveal" style="background: var(--cream-soft);" data-delay="100">
+        <div class="feature-icon">📁</div>
+        <h3 style="color: var(--navy);">Document store</h3>
+        <p style="color: var(--text-dim);">Quotes, invoices, certificates, warranties — all attached to the right job, searchable years later.</p>
+      </div>
+      <div class="feature reveal" style="background: var(--cream-soft);" data-delay="200">
+        <div class="feature-icon">👥</div>
+        <h3 style="color: var(--navy);">Owner portal</h3>
+        <p style="color: var(--text-dim);">A clean read-only view for owners and committee members. No more "what's happening with the lift repair?" emails.</p>
+      </div>
+      <div class="feature reveal" style="background: var(--cream-soft);" data-delay="300">
+        <div class="feature-icon">🛡️</div>
+        <h3 style="color: var(--navy);">Full audit trail</h3>
+        <p style="color: var(--text-dim);">Every approval, every change, every comment — timestamped and unforgeable. Reportable straight into AGM packs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="cta-band">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">See it in your building</span>
+      <h2>Book a 20-minute walkthrough.</h2>
+      <p>We'll show OC Order against a building like yours — and talk through what onboarding looks like.</p>
+      <a class="btn btn-primary" href="contact.html">Book a walkthrough <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="nav-logo" style="color: var(--on-dark);"><span class="logo-mark">C</span><span>CAPCONNEX</span></div>
+        <p class="footer-tag">Investment &amp; Applied AI for Australian property and energy professionals. Melbourne, since 2014.</p>
+      </div>
+      <div><h4>Products</h4><ul><li><a href="pencil.html">Pencil Feasibility</a></li><li><a href="ev-charging.html">Smart EV Charging</a></li><li><a href="ocorder.html">OC Order</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="mailto:matthew.he@capconnex.com.au">matthew.he@capconnex.com.au</a></li><li>Melbourne, VIC, Australia</li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span data-year>2026</span> Capconnex Investment. All rights reserved.</div>
+      <div>Made in Melbourne 🇦🇺</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
