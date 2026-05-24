@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" role="img" aria-label="Capconnex">
+  <title>Capconnex — Variant C · Pure typographic</title>
+  <!-- Hand-drawn C glyph (so we can embed a gold square inside its aperture) -->
+  <g transform="translate(18, 30)">
+    <!-- C: 270° arc with thick stroke, opening to the right -->
+    <path
+      d="M 53 12 A 26 26 0 1 0 53 64"
+      fill="none"
+      stroke="#0A1628"
+      stroke-width="13"
+      stroke-linecap="butt"
+    />
+    <!-- Gold anchor square inside the C aperture -->
+    <rect x="38" y="32" width="12" height="12" fill="#C8A951"/>
+  </g>
+
+  <!-- Remaining wordmark APCONNEX (drawn next to the custom C) -->
+  <text
+    x="88"
+    y="78"
+    font-family="Mulish, -apple-system, system-ui, sans-serif"
+    font-size="56"
+    font-weight="900"
+    letter-spacing="3"
+    fill="#0A1628"
+  >APCONNEX</text>
+</svg>

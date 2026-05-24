@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" role="img" aria-label="Capconnex">
+  <title>Capconnex — Variant A · Mark + wordmark</title>
+  <!-- C arc opening rightward, with an upward-trending gold line embedded in the gap -->
+  <g transform="translate(20, 20)">
+    <!-- 270deg C arc -->
+    <path
+      d="M 70 14 A 28 28 0 1 0 70 66"
+      fill="none"
+      stroke="#0A1628"
+      stroke-width="10"
+      stroke-linecap="round"
+    />
+    <!-- Upward trend zigzag (property + energy upside) -->
+    <polyline
+      points="50,52 60,44 70,48 82,32"
+      fill="none"
+      stroke="#C8A951"
+      stroke-width="5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <!-- Arrow head -->
+    <polygon
+      points="82,32 76,32 82,38"
+      fill="#C8A951"
+    />
+  </g>
+
+  <!-- Wordmark CAPCONNEX -->
+  <text
+    x="118"
+    y="74"
+    font-family="Mulish, -apple-system, system-ui, sans-serif"
+    font-size="42"
+    font-weight="800"
+    letter-spacing="2"
+    fill="#0A1628"
+  >CAPCONNEX</text>
+</svg>
