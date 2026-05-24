@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" role="img" aria-label="Capconnex">
+  <title>Capconnex — Variant F · Serif wordmark</title>
+  <!-- Refined serif wordmark, no icon. Gold period after the name as the only accent. -->
+
+  <text
+    x="20"
+    y="70"
+    font-family="'Cormorant Garamond', 'Crimson Pro', 'Times New Roman', serif"
+    font-size="54"
+    font-weight="500"
+    letter-spacing="1"
+    fill="#0A1628"
+  >Capconnex<tspan fill="#C8A951" dx="2">.</tspan></text>
+
+  <!-- Tagline in small caps, sans -->
+  <text
+    x="22"
+    y="95"
+    font-family="Mulish, -apple-system, system-ui, sans-serif"
+    font-size="10"
+    font-weight="700"
+    letter-spacing="4"
+    fill="#718096"
+  >INVESTMENT  ·  APPLIED  AI</text>
+</svg>

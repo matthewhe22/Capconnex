@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" role="img" aria-label="Capconnex">
+  <title>Capconnex — Variant D · CX monogram badge</title>
+  <!-- Navy square badge with gold CX monogram -->
+  <g transform="translate(20, 16)">
+    <!-- The badge -->
+    <rect x="0" y="0" width="88" height="88" rx="14" fill="#0A1628"/>
+    <!-- Inner hairline border (gold accent) -->
+    <rect x="6" y="6" width="76" height="76" rx="9" fill="none" stroke="#C8A951" stroke-width="1" opacity="0.55"/>
+    <!-- CX monogram: stylized C overlapping X -->
+    <!-- C, opens to the right -->
+    <path
+      d="M 55 26 A 18 18 0 1 0 55 62"
+      fill="none"
+      stroke="#F4F1EA"
+      stroke-width="6"
+      stroke-linecap="round"
+    />
+    <!-- X — drawn as two crossing strokes, anchored in C's aperture, in gold -->
+    <line x1="46" y1="36" x2="68" y2="58" stroke="#C8A951" stroke-width="6" stroke-linecap="round"/>
+    <line x1="68" y1="36" x2="46" y2="58" stroke="#C8A951" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text
+    x="130"
+    y="62"
+    font-family="Mulish, -apple-system, system-ui, sans-serif"
+    font-size="34"
+    font-weight="800"
+    letter-spacing="3"
+    fill="#0A1628"
+  >CAPCONNEX</text>
+  <text
+    x="130"
+    y="86"
+    font-family="Mulish, -apple-system, system-ui, sans-serif"
+    font-size="10"
+    font-weight="700"
+    letter-spacing="3"
+    fill="#718096"
+  >INVESTMENT · APPLIED AI</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" role="img" aria-label="Capconnex">
+  <title>Capconnex — Variant E · Network nodes</title>
+  <!-- Three nodes connected — "Connex" = connection between Property, Capital, Energy -->
+  <g transform="translate(20, 22)">
+    <!-- Connecting lines (drawn first so they sit behind nodes) -->
+    <line x1="14" y1="62" x2="46" y2="14" stroke="#0A1628" stroke-width="2"/>
+    <line x1="14" y1="62" x2="78" y2="62" stroke="#C8A951" stroke-width="2"/>
+    <line x1="46" y1="14" x2="78" y2="62" stroke="#0A1628" stroke-width="2"/>
+
+    <!-- Node 1 — top (gold, the "hub") -->
+    <circle cx="46" cy="14" r="8" fill="#C8A951"/>
+    <!-- Node 2 — bottom-left -->
+    <circle cx="14" cy="62" r="8" fill="#0A1628"/>
+    <!-- Node 3 — bottom-right -->
+    <circle cx="78" cy="62" r="8" fill="#0A1628"/>
+
+    <!-- Subtle ring around the gold hub -->
+    <circle cx="46" cy="14" r="14" fill="none" stroke="#C8A951" stroke-width="1" opacity="0.35"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text
+    x="130"
+    y="62"
+    font-family="Mulish, -apple-system, system-ui, sans-serif"
+    font-size="38"
+    font-weight="800"
+    letter-spacing="2"
+    fill="#0A1628"
+  >CAPCONNEX</text>
+  <text
+    x="131"
+    y="86"
+    font-family="Mulish, -apple-system, system-ui, sans-serif"
+    font-size="10"
+    font-weight="700"
+    letter-spacing="3"
+    fill="#718096"
+  >PROPERTY · CAPITAL · ENERGY</text>
+</svg>
