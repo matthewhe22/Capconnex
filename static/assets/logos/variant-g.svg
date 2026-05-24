@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" role="img" aria-label="Capconnex">
+  <title>Capconnex — Variant G · Prism mark</title>
+  <!-- Solid navy triangle with gold leading edge — Linear/Vercel/Stripe-era dev-tool aesthetic -->
+  <g transform="translate(22, 22)">
+    <!-- Filled triangle pointing up-right -->
+    <polygon points="0,70 44,4 88,70" fill="#0A1628"/>
+    <!-- Left face highlight — narrow gold sliver -->
+    <polygon points="0,70 44,4 30,42" fill="#C8A951"/>
+    <!-- Optional bottom-edge accent (very thin gold line) -->
+    <line x1="0" y1="70" x2="88" y2="70" stroke="#C8A951" stroke-width="2"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text
+    x="135"
+    y="72"
+    font-family="Mulish, -apple-system, system-ui, sans-serif"
+    font-size="38"
+    font-weight="800"
+    letter-spacing="2"
+    fill="#0A1628"
+  >capconnex</text>
+</svg>

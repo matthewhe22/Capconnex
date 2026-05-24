@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" role="img" aria-label="Capconnex">
+  <title>Capconnex — Variant I · Wordmark, gold X anchor</title>
+  <!--
+    Pure wordmark in lowercase Mulish + a custom gold X drawn as crossing strokes,
+    replacing the typed X. Stripe-style cleanness with a single distinctive accent.
+  -->
+  <!-- "capconne" rendered as text -->
+  <text
+    x="20"
+    y="76"
+    font-family="Mulish, -apple-system, system-ui, sans-serif"
+    font-size="56"
+    font-weight="800"
+    letter-spacing="-1"
+    fill="#0A1628"
+  >capconne</text>
+
+  <!-- Hand-drawn gold X to replace the typed x -->
+  <g transform="translate(258, 38)">
+    <line x1="0" y1="0" x2="34" y2="38" stroke="#C8A951" stroke-width="9" stroke-linecap="round"/>
+    <line x1="34" y1="0" x2="0" y2="38" stroke="#C8A951" stroke-width="9" stroke-linecap="round"/>
+  </g>
+</svg>
