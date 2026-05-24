@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Capconnex</title>
+  <meta name="description" content="Get in touch with Capconnex. Melbourne-based investment and applied-AI studio for property and energy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+
+<nav class="nav" role="navigation" aria-label="Main">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="index.html"><span class="logo-mark">C</span><span>CAPCONNEX</span></a>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About</a>
+      <div class="nav-dropdown">
+        <button class="nav-link nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">Products <span class="caret">▼</span></button>
+        <div class="nav-dropdown-menu" role="menu">
+          <a class="nav-dropdown-item" href="pencil.html"><span class="item-title"><span class="item-icon">⌨</span> Pencil Feasibility</span><span class="item-desc">AI feasibility & margin modelling</span></a>
+          <a class="nav-dropdown-item" href="ev-charging.html"><span class="item-title"><span class="item-icon">⚡</span> Smart EV Charging</span><span class="item-desc">Solar + battery + Tesla orchestration</span></a>
+          <a class="nav-dropdown-item" href="ocorder.html"><span class="item-title"><span class="item-icon">📦</span> OC Order</span><span class="item-desc">Owners' corp order management</span></a>
+        </div>
+      </div>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-cta" href="contact.html">Get in Touch</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<header class="about-hero" style="padding-bottom: 2rem;">
+  <div class="container">
+    <div class="on-dark">
+      <span class="eyebrow reveal">Contact</span>
+      <h1 class="reveal" data-delay="100">Let's talk.</h1>
+      <p class="lead reveal" data-delay="200" style="margin-top: 1.5rem;">
+        Tell us what you're working on — property, energy, operations — and we'll point you to the
+        right tool or set up time for a proper conversation.
+      </p>
+    </div>
+  </div>
+</header>
+
+<!-- ========== CONTACT ========== -->
+<section>
+  <div class="container">
+    <div class="contact-layout">
+      <aside class="contact-info reveal">
+        <div class="contact-card">
+          <h4>Email</h4>
+          <div class="value"><a href="mailto:matthew.he@capconnex.com.au">matthew.he@capconnex.com.au</a></div>
+          <div class="note">Typical response within one business day.</div>
+        </div>
+        <div class="contact-card">
+          <h4>Office</h4>
+          <div class="value">Melbourne, Victoria</div>
+          <div class="note">Australia. Meetings by appointment.</div>
+        </div>
+        <div class="contact-card">
+          <h4>Pencil App</h4>
+          <div class="value"><a href="https://pencil.capconnex.com.au" target="_blank" rel="noopener">pencil.capconnex.com.au</a></div>
+          <div class="note">Existing user? Open the platform directly.</div>
+        </div>
+      </aside>
+
+      <form id="contact-form" class="form reveal" data-delay="200" novalidate>
+        <!-- Web3Forms config -->
+        <input type="hidden" name="access_key" value="7180723b-ca07-4092-89bc-341888a9b547">
+        <input type="hidden" name="subject" value="New enquiry from capconnex.com.au">
+        <input type="hidden" name="from_name" value="Capconnex website">
+        <input type="checkbox" name="botcheck" style="display:none">
+
+        <h2 style="font-size: 1.6rem;">Send a message</h2>
+        <p style="color: var(--text-dim); margin-top: -0.6rem;">We read every message and reply personally.</p>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email">
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="company">Organisation <span style="color: var(--text-muted); font-weight: 400;">(optional)</span></label>
+            <input id="company" name="company" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="topic">I'd like to talk about</label>
+            <select id="topic" name="topic" required>
+              <option value="" selected disabled>Choose one…</option>
+              <option>Pencil Feasibility Model</option>
+              <option>Smart EV Charging Manager</option>
+              <option>OC Order</option>
+              <option>Property investment / advisory</option>
+              <option>Property valuation</option>
+              <option>Something else</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required placeholder="Tell us about the project, the stage you're at, and what would be useful from us."></textarea>
+        </div>
+
+        <div class="form-status" role="status" aria-live="polite"></div>
+
+        <div>
+          <button type="submit" class="btn btn-primary">Send message <span class="arrow">→</span></button>
+          <span style="display: block; font-size: 0.8rem; color: var(--text-muted); margin-top: 0.8rem;">By submitting, you agree to be contacted about your enquiry. We don't share your details.</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="nav-logo" style="color: var(--on-dark);"><span class="logo-mark">C</span><span>CAPCONNEX</span></div>
+        <p class="footer-tag">Investment &amp; Applied AI for Australian property and energy professionals. Melbourne, since 2014.</p>
+      </div>
+      <div><h4>Products</h4><ul><li><a href="pencil.html">Pencil Feasibility</a></li><li><a href="ev-charging.html">Smart EV Charging</a></li><li><a href="ocorder.html">OC Order</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="mailto:matthew.he@capconnex.com.au">matthew.he@capconnex.com.au</a></li><li>Melbourne, VIC, Australia</li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span data-year>2026</span> Capconnex Investment. All rights reserved.</div>
+      <div>Made in Melbourne 🇦🇺</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

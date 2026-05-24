@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart EV Charging Manager — Solar + Battery + Tesla Orchestration | Capconnex</title>
+  <meta name="description" content="Dynamically adjusts your Tesla's charge rate from 5A to 32A — matching solar surplus and battery capacity. Zero grid import. Zero touch.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+
+<nav class="nav" role="navigation" aria-label="Main">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="index.html"><span class="logo-mark">C</span><span>CAPCONNEX</span></a>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About</a>
+      <div class="nav-dropdown">
+        <button class="nav-link nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">Products <span class="caret">▼</span></button>
+        <div class="nav-dropdown-menu" role="menu">
+          <a class="nav-dropdown-item" href="pencil.html"><span class="item-title"><span class="item-icon">⌨</span> Pencil Feasibility</span><span class="item-desc">AI feasibility & margin modelling</span></a>
+          <a class="nav-dropdown-item" href="ev-charging.html"><span class="item-title"><span class="item-icon">⚡</span> Smart EV Charging</span><span class="item-desc">Solar + battery + Tesla orchestration</span></a>
+          <a class="nav-dropdown-item" href="ocorder.html"><span class="item-title"><span class="item-icon">📦</span> OC Order</span><span class="item-desc">Owners' corp order management</span></a>
+        </div>
+      </div>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-cta" href="contact.html">Get in Touch</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<header class="product-hero">
+  <div class="hero-grid"></div>
+  <div class="container" style="position: relative; z-index: 2;">
+    <div class="on-dark">
+      <span class="eyebrow reveal">⚡ Energy Intelligence</span>
+      <h1 class="reveal" data-delay="100" style="margin-top: 1rem; max-width: 18ch;">
+        Charge your Tesla. <br>
+        Spend <span style="color: var(--gold-bright);">$0</span> on the grid.
+      </h1>
+      <p class="lead reveal" data-delay="200" style="margin-top: 1.5rem;">
+        The Smart EV Charging Manager dynamically adjusts your Tesla's charge rate from
+        5A to 32A — matching available solar surplus and battery capacity in real time.
+        Zero grid import. Zero touch.
+      </p>
+      <div class="hero-cta reveal" data-delay="300">
+        <a class="btn btn-primary" href="contact.html">Request access <span class="arrow">→</span></a>
+        <a class="btn btn-secondary" href="#how-it-works">How it works</a>
+      </div>
+
+      <div class="product-stats reveal" data-delay="400">
+        <div class="product-stat">
+          <div class="stat-value" data-countup="$0">$0</div>
+          <div class="stat-label">Grid spend</div>
+        </div>
+        <div class="product-stat">
+          <div class="stat-value" data-countup="5–32A">5–32A</div>
+          <div class="stat-label">Dynamic power range</div>
+        </div>
+        <div class="product-stat">
+          <div class="stat-value" data-countup="2">2 min</div>
+          <div class="stat-label">Adjustment interval</div>
+        </div>
+        <div class="product-stat">
+          <div class="stat-value" data-countup="24/7">24/7</div>
+          <div class="stat-label">Autonomous</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ========== LIVE DASHBOARD MOCK ========== -->
+<section style="background: var(--cream-soft);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Live dashboard</span>
+      <h2>Watch it earn its keep.</h2>
+      <p>A single view across solar generation, battery state, grid import, and Tesla charge rate — updated continuously.</p>
+    </div>
+
+    <div class="reveal" style="background: linear-gradient(180deg, var(--navy-deep), var(--navy)); border-radius: var(--r-lg); padding: 2rem; color: var(--on-dark); box-shadow: var(--shadow-lg);">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+        <div>
+          <div style="font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--on-dark-muted);">☀ Solar in</div>
+          <div style="font-size: 1.8rem; font-weight: 800; color: var(--gold-bright); margin-top: 0.3rem;">7.42 <span style="font-size: 0.9rem; color: var(--on-dark-muted); font-weight: 600;">kW</span></div>
+        </div>
+        <div>
+          <div style="font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--on-dark-muted);">🔋 Battery</div>
+          <div style="font-size: 1.8rem; font-weight: 800; color: var(--gold-bright); margin-top: 0.3rem;">86% <span style="font-size: 0.9rem; color: var(--on-dark-muted); font-weight: 600;">↑</span></div>
+        </div>
+        <div>
+          <div style="font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--on-dark-muted);">🚗 Tesla draw</div>
+          <div style="font-size: 1.8rem; font-weight: 800; color: var(--gold-bright); margin-top: 0.3rem;">22 <span style="font-size: 0.9rem; color: var(--on-dark-muted); font-weight: 600;">A · 5.1 kW</span></div>
+        </div>
+        <div>
+          <div style="font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--on-dark-muted);">⚡ Grid import</div>
+          <div style="font-size: 1.8rem; font-weight: 800; color: #4ade80; margin-top: 0.3rem;">0.00 <span style="font-size: 0.9rem; color: var(--on-dark-muted); font-weight: 600;">kW</span></div>
+        </div>
+      </div>
+
+      <!-- Mock chart -->
+      <div style="background: rgba(244, 241, 234, 0.04); border: 1px solid var(--navy-line); border-radius: var(--r-md); padding: 1.5rem; position: relative; height: 220px; overflow: hidden;">
+        <div style="position: absolute; top: 1rem; left: 1.5rem; font-size: 0.75rem; color: var(--on-dark-muted); letter-spacing: 0.1em; text-transform: uppercase;">Charge rate · last 6 hours</div>
+        <svg viewBox="0 0 600 180" preserveAspectRatio="none" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 85%;">
+          <defs>
+            <linearGradient id="grad" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#C8A951" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="#C8A951" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <!-- area -->
+          <path d="M0,140 L40,135 80,120 120,90 160,60 200,55 240,40 280,35 320,50 360,70 400,55 440,45 480,60 520,90 560,110 600,130 L600,180 L0,180 Z" fill="url(#grad)"/>
+          <!-- line -->
+          <path d="M0,140 L40,135 80,120 120,90 160,60 200,55 240,40 280,35 320,50 360,70 400,55 440,45 480,60 520,90 560,110 600,130" stroke="#E0BE6E" stroke-width="2" fill="none" stroke-linejoin="round"/>
+          <!-- axis labels -->
+          <text x="0" y="175" fill="#A0AEC0" font-size="10" font-family="Mulish">8:00</text>
+          <text x="200" y="175" fill="#A0AEC0" font-size="10" font-family="Mulish">10:00</text>
+          <text x="400" y="175" fill="#A0AEC0" font-size="10" font-family="Mulish">12:00</text>
+          <text x="570" y="175" fill="#A0AEC0" font-size="10" font-family="Mulish">14:00</text>
+        </svg>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; margin-top: 1rem; font-size: 0.8rem; color: var(--on-dark-muted);">
+        <span>● Adjustment every 2 minutes</span>
+        <span>Last sync: 12 sec ago</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== HOW IT WORKS ========== -->
+<section id="how-it-works" class="section-dark with-grain">
+  <div class="container">
+    <div class="section-head on-dark reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>Smart charging in four steps.</h2>
+      <p>From sunrise to spirited drives — intelligent orchestration of your Alpha ESS battery, solar, and Tesla Wall Connector.</p>
+    </div>
+
+    <div class="steps" style="margin-top: 1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+      <div class="step reveal" style="background: var(--navy-elev); color: var(--on-dark);" data-delay="100">
+        <h3 style="color: var(--on-dark);">Solar + battery monitor</h3>
+        <p style="color: var(--on-dark-muted);">Alpha ESS reads solar generation, battery state-of-charge, and household load in real time — sampled every 2 minutes.</p>
+      </div>
+      <div class="step reveal" style="background: var(--navy-elev); color: var(--on-dark);" data-delay="200">
+        <h3 style="color: var(--on-dark);">Formula engine</h3>
+        <p style="color: var(--on-dark-muted);">Available power = Solar + Battery − Household Load. If surplus drops below 200 W, charging pauses cleanly.</p>
+      </div>
+      <div class="step reveal" style="background: var(--navy-elev); color: var(--on-dark);" data-delay="300">
+        <h3 style="color: var(--on-dark);">Tesla Wall Connector</h3>
+        <p style="color: var(--on-dark-muted);">Charge current is adjusted dynamically via the Tesla API. No app needed; no manual override required.</p>
+      </div>
+      <div class="step reveal" style="background: var(--navy-elev); color: var(--on-dark);" data-delay="400">
+        <h3 style="color: var(--on-dark);">Recalculate &amp; repeat</h3>
+        <p style="color: var(--on-dark-muted);">Every 2 minutes, on the clock. Charges from 5 A up to 32 A. Zero grid import. Zero touch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SMART CHARGING FORMULA ========== -->
+<section style="background: var(--cream-soft);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The science</span>
+      <h2>Smart charging formula.</h2>
+      <p>The algorithm balances solar generation, Alpha ESS discharge, and household demand — optimised for your Tesla. Worked example below.</p>
+    </div>
+
+    <div class="reveal" style="display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center; gap: 0.8rem;">
+      <div style="background: var(--white); border: 1px solid var(--cream-line); border-radius: var(--r-md); padding: 1.2rem 1.5rem; min-width: 140px; text-align: center;">
+        <div style="font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted);">Solar gen</div>
+        <div style="font-size: 1.15rem; font-weight: 800; color: var(--gold); margin-top: 0.3rem;">☀️ 2,525 W</div>
+      </div>
+      <div style="align-self: center; color: var(--gold); font-weight: 800; font-size: 1.3rem;">+</div>
+      <div style="background: var(--white); border: 1px solid var(--cream-line); border-radius: var(--r-md); padding: 1.2rem 1.5rem; min-width: 140px; text-align: center;">
+        <div style="font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted);">Battery max</div>
+        <div style="font-size: 1.15rem; font-weight: 800; color: var(--gold); margin-top: 0.3rem;">🔋 +5,000 W</div>
+      </div>
+      <div style="align-self: center; color: var(--gold); font-weight: 800; font-size: 1.3rem;">−</div>
+      <div style="background: var(--white); border: 1px solid var(--cream-line); border-radius: var(--r-md); padding: 1.2rem 1.5rem; min-width: 140px; text-align: center;">
+        <div style="font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted);">Household load</div>
+        <div style="font-size: 1.15rem; font-weight: 800; color: var(--gold); margin-top: 0.3rem;">🏠 312 W</div>
+      </div>
+      <div style="align-self: center; color: var(--gold); font-weight: 800; font-size: 1.6rem;">=</div>
+      <div style="background: linear-gradient(135deg, var(--navy), var(--navy-elev)); color: var(--on-dark); border-radius: var(--r-md); padding: 1.2rem 1.7rem; min-width: 180px; text-align: center; box-shadow: var(--shadow-md);">
+        <div style="font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-bright);">To your Tesla</div>
+        <div style="font-size: 1.2rem; font-weight: 800; color: var(--on-dark); margin-top: 0.3rem;">⚡ 7,213 W → 16 A</div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-top: 2.5rem;">
+      <div class="reveal" data-delay="100" style="background: var(--white); border: 1px solid var(--cream-line); border-radius: var(--r-md); padding: 1.2rem 1.4rem;">
+        <strong style="color: var(--gold); display: block; font-size: 0.9rem; margin-bottom: 0.3rem;">☀️ Solar generation</strong>
+        <span style="font-size: 0.92rem; color: var(--text-dim);">Real-time PV yield from your rooftop — every watt goes into your Tesla, not the grid at 5¢ feed-in.</span>
+      </div>
+      <div class="reveal" data-delay="200" style="background: var(--white); border: 1px solid var(--cream-line); border-radius: var(--r-md); padding: 1.2rem 1.4rem;">
+        <strong style="color: var(--gold); display: block; font-size: 0.9rem; margin-bottom: 0.3rem;">🔋 5,000 W battery buffer</strong>
+        <span style="font-size: 0.92rem; color: var(--text-dim);">Alpha ESS discharge provides up to 5 kW. SOC ≥ 15% unlocks max discharge.</span>
+      </div>
+      <div class="reveal" data-delay="300" style="background: var(--white); border: 1px solid var(--cream-line); border-radius: var(--r-md); padding: 1.2rem 1.4rem;">
+        <strong style="color: var(--gold); display: block; font-size: 0.9rem; margin-bottom: 0.3rem;">🏠 Non-EV load subtracted</strong>
+        <span style="font-size: 0.92rem; color: var(--text-dim);">Household consumption (excluding the Wall Connector) is deducted first. Ensures charging never pulls from the grid.</span>
+      </div>
+      <div class="reveal" data-delay="400" style="background: var(--white); border: 1px solid var(--cream-line); border-radius: var(--r-md); padding: 1.2rem 1.4rem;">
+        <strong style="color: var(--gold); display: block; font-size: 0.9rem; margin-bottom: 0.3rem;">⚡ Zero-grid guarantee</strong>
+        <span style="font-size: 0.92rem; color: var(--text-dim);">Final charge delivered with 0 W grid import. Saves $300+ per year vs peak-rate charging.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FEATURES ========== -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why Capconnex</span>
+      <h2>Purpose-built for Tesla owners <br>with solar and battery.</h2>
+      <p>Six benefits you feel in the bill — and on the way the system runs day to day.</p>
+    </div>
+
+    <div class="feature-grid" style="background: var(--cream-line); border-color: var(--cream-line);">
+      <div class="feature reveal" style="background: var(--cream-soft);" data-delay="100">
+        <div class="feature-icon">💰</div>
+        <h3 style="color: var(--navy);">Zero peak tariffs</h3>
+        <p style="color: var(--text-dim);">Your Tesla charges entirely from solar + Alpha ESS battery. Zero peak-rate electricity purchased — save $300+ per year.</p>
+      </div>
+      <div class="feature reveal" style="background: var(--cream-soft);" data-delay="200">
+        <div class="feature-icon">🌱</div>
+        <h3 style="color: var(--navy);">100% solar energy</h3>
+        <p style="color: var(--text-dim);">Every kWh delivered to your Tesla is from stored solar. Maximise self-consumption over low-value feed-in.</p>
+      </div>
+      <div class="feature reveal" style="background: var(--cream-soft);" data-delay="300">
+        <div class="feature-icon">🤖</div>
+        <h3 style="color: var(--navy);">Zero-touch automation</h3>
+        <p style="color: var(--text-dim);">No apps, no timers. Set once and forget — adjusts itself every 2 minutes. Works while you sleep.</p>
+      </div>
+      <div class="feature reveal" style="background: var(--cream-soft);" data-delay="100">
+        <div class="feature-icon">🏔</div>
+        <h3 style="color: var(--navy);">Peak shaving</h3>
+        <p style="color: var(--text-dim);">Shifts charging away from the 3–9 PM peak window. Combined battery + solar cuts household peak demand by up to 40%.</p>
+      </div>
+      <div class="feature reveal" style="background: var(--cream-soft);" data-delay="200">
+        <div class="feature-icon">🔋</div>
+        <h3 style="color: var(--navy);">Battery health</h3>
+        <p style="color: var(--text-dim);">Prevents deep discharge below 20% SOC. Intelligent limits extend Alpha ESS battery life by 2–3 years.</p>
+      </div>
+      <div class="feature reveal" style="background: var(--cream-soft);" data-delay="300">
+        <div class="feature-icon">📊</div>
+        <h3 style="color: var(--navy);">Real-time dashboard</h3>
+        <p style="color: var(--text-dim);">Live view of solar yield, battery levels, charge rate, and savings. Track carbon reduction in real time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="cta-band">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">Get on the list</span>
+      <h2>Want it running on your system?</h2>
+      <p>We're rolling Smart EV Charging Manager out to a small group of Tesla + solar households around Melbourne. If that's you — get in touch.</p>
+      <a class="btn btn-primary" href="contact.html">Request access <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="nav-logo" style="color: var(--on-dark);"><span class="logo-mark">C</span><span>CAPCONNEX</span></div>
+        <p class="footer-tag">Investment &amp; Applied AI for Australian property and energy professionals. Melbourne, since 2014.</p>
+      </div>
+      <div><h4>Products</h4><ul><li><a href="pencil.html">Pencil Feasibility</a></li><li><a href="ev-charging.html">Smart EV Charging</a></li><li><a href="ocorder.html">OC Order</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="mailto:matthew.he@capconnex.com.au">matthew.he@capconnex.com.au</a></li><li>Melbourne, VIC, Australia</li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span data-year>2026</span> Capconnex Investment. All rights reserved.</div>
+      <div>Made in Melbourne 🇦🇺</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
