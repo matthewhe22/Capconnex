@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" role="img" aria-label="Capconnex">
+  <title>Capconnex — Variant K · Converging arcs</title>
+  <!--
+    Mark = two arcs that converge into an X-like crossing.
+    Reads as "signals connecting" / "two streams meeting" — softer, organic version of network.
+    Navy arc + gold arc, crossing point implied.
+  -->
+  <g transform="translate(22, 22)">
+    <!-- Navy arc: bottom-left to top-right -->
+    <path
+      d="M 8 72 Q 40 -2 76 36"
+      fill="none"
+      stroke="#0A1628"
+      stroke-width="7"
+      stroke-linecap="round"
+    />
+    <!-- Gold arc: top-left to bottom-right -->
+    <path
+      d="M 8 36 Q 40 110 76 40"
+      fill="none"
+      stroke="#C8A951"
+      stroke-width="7"
+      stroke-linecap="round"
+    />
+    <!-- Central crossing node (small gold dot, navy ring) -->
+    <circle cx="42" cy="42" r="6.5" fill="#0A1628"/>
+    <circle cx="42" cy="42" r="3.5" fill="#C8A951"/>
+  </g>
+
+  <!-- Wordmark with the X drawn as gold crossing strokes (echoes the mark) -->
+  <text
+    x="125"
+    y="72"
+    font-family="Mulish, -apple-system, system-ui, sans-serif"
+    font-size="44"
+    font-weight="800"
+    fill="#0A1628"
+  >capconne</text>
+  <g transform="translate(295, 38)">
+    <line x1="0" y1="0" x2="32" y2="36" stroke="#C8A951" stroke-width="7" stroke-linecap="round"/>
+    <line x1="32" y1="0" x2="0" y2="36" stroke="#C8A951" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>
