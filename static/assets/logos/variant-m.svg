@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" role="img" aria-label="Capconnex">
+  <title>Capconnex — Variant M · Gold O ring</title>
+  <!--
+    The middle O becomes a perfect gold ring — round / complete / connection node.
+    Circle/round = auspicious 圆满. No crosses, no X.
+    Wordmark: "capc" + [O ring] + "nnex"
+  -->
+  <!-- "capc" -->
+  <text
+    x="20"
+    y="76"
+    font-family="Mulish, -apple-system, system-ui, sans-serif"
+    font-size="56"
+    font-weight="800"
+    letter-spacing="-1"
+    fill="#0A1628"
+  >capc</text>
+
+  <!-- O as a perfect gold ring -->
+  <circle cx="167" cy="58" r="20" fill="none" stroke="#C8A951" stroke-width="7"/>
+  <!-- Tiny gold dot at center (the "node") -->
+  <circle cx="167" cy="58" r="3" fill="#C8A951"/>
+
+  <!-- "nnex" -->
+  <text
+    x="194"
+    y="76"
+    font-family="Mulish, -apple-system, system-ui, sans-serif"
+    font-size="56"
+    font-weight="800"
+    letter-spacing="-1"
+    fill="#0A1628"
+  >nnex</text>
+</svg>

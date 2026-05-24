@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" role="img" aria-label="Capconnex">
+  <title>Capconnex — Variant N · CO monogram mark</title>
+  <!--
+    Separate mark = "C" navy arc embracing an inner gold "O" ring.
+    Reads as monogram: C of Capital, O of Connex. Two letters fused = brand seal.
+    Round shapes only — no X, no crosses.
+  -->
+  <g transform="translate(20, 18)">
+    <!-- Outer C arc (navy, 270deg, opens right) -->
+    <path
+      d="M 70 14 A 28 28 0 1 0 70 70"
+      fill="none"
+      stroke="#0A1628"
+      stroke-width="8"
+      stroke-linecap="round"
+    />
+    <!-- Inner O ring (gold) -->
+    <circle cx="42" cy="42" r="14" fill="none" stroke="#C8A951" stroke-width="6"/>
+    <!-- Small center dot for emphasis -->
+    <circle cx="42" cy="42" r="2.5" fill="#C8A951"/>
+  </g>
+
+  <!-- Wordmark — all navy, no special letters -->
+  <text
+    x="125"
+    y="72"
+    font-family="Mulish, -apple-system, system-ui, sans-serif"
+    font-size="40"
+    font-weight="800"
+    letter-spacing="0"
+    fill="#0A1628"
+  >capconnex</text>
+</svg>
